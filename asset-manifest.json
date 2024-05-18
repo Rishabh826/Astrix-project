@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Astrix-project/static/css/main.40b2bbb2.css",
+    "main.js": "/Astrix-project/static/js/main.8c0ed381.js",
+    "static/js/453.7545c069.chunk.js": "/Astrix-project/static/js/453.7545c069.chunk.js",
+    "index.html": "/Astrix-project/index.html",
+    "main.40b2bbb2.css.map": "/Astrix-project/static/css/main.40b2bbb2.css.map",
+    "main.8c0ed381.js.map": "/Astrix-project/static/js/main.8c0ed381.js.map",
+    "453.7545c069.chunk.js.map": "/Astrix-project/static/js/453.7545c069.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40b2bbb2.css",
+    "static/js/main.8c0ed381.js"
+  ]
+}
