@@ -1,0 +1,94 @@
+.collection-container {
+  display: flex; /* Use flexbox for layout */
+  height: 100vh; /* Ensure the container takes the full height of the viewport */
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 100%; /* Ensure each section takes the full height */
+}
+
+.section.large {
+  flex: 5.5; /* Set flex ratio for the large section */
+  position: relative; /* Required for the absolute positioning of cards */
+}
+
+.section.small {
+  flex: 0.5; /* Set flex ratio for the small section */
+}
+
+.section.medium {
+  flex: 4; /* Set flex ratio for the medium section */
+}
+
+.inner-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.card-container {
+  display: flex; /* Use flexbox for layout */
+  animation: moveCards 10s infinite alternate ease-in-out; /* Animate cards faster */
+}
+
+.card {
+  width: calc(100% / 2); /* Adjust card width to fit 5 cards within the section, considering margins */
+  margin-right: 10px; /* Add spacing between cards */
+  transition: transform 0.5s ease; /* Smooth transformation */
+}
+
+.card img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.card-container .card:hover {
+  transform: scale(1.1); /* Scale up when hovered */
+}
+
+@keyframes moveCards {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-20%);
+  }
+  50% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+footer {
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 20px;
+ /* Optional: Add a background color to the footer */
+  width: 100%;
+  position: absolute; /* Position the footer at the bottom */
+  bottom: 0;
+}
+.card {
+  width: calc(100% / 4 - 20px); /* Adjust card width to fit 4 cards within the section, considering margins */
+  margin-right: 20px; /* Add spacing between cards */
+  transition: transform 0.5s ease; /* Smooth transformation */
+  overflow: hidden; /* Ensure the image does not overflow the card */
+}
+
+.card img {
+  width: 100%; /* Ensure the image width fills the card */
+  height: 100%; /* Ensure the image height fills the card */
+  object-fit: cover; /* Ensure the image fully covers the card */
+}
+
