@@ -6,7 +6,7 @@ import Event from './components/Event';
 function App() {
   return (
     <HashRouter>
-      <Routes>
+      <Routes basename="/Astrix-project">
       <Route exact path="/" element={<Collection />} />
       <Route exact path="/event" element={<Event/>} />
       </Routes>
