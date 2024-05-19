@@ -24,7 +24,7 @@ const Event = () => {
         </div>
         <footer>
           <div className="btn-group" role="group" aria-label="Basic link button group" style={{borderRadius:'100px'}}> 
-            <a href="/" className="btn btn-outline-primary">Events</a>
+            <a href="/event" className="btn btn-outline-primary">Events</a>
             <a href="/" className="btn btn-outline-primary">Collections</a>
           </div>
         </footer>
